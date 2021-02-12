@@ -1,4 +1,5 @@
 {
   "item.simple.copper_ingot": "Copper Ingot",
-  "block.simple.copper_block": "Copper Block"
+  "block.simple.copper_block": "Copper Block",
+  "block.simple.copper_ore": "Copper Ore"
 }

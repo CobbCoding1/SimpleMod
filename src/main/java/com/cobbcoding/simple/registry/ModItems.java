@@ -18,6 +18,8 @@ public class ModItems {
 
     // Copper Block
     public static final BlockItem COPPER_BLOCK = new BlockItem(ModBlocks.COPPER_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
+    // Copper Ore
+    public static final BlockItem COPPER_ORE = new BlockItem(ModBlocks.COPPER_ORE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
 
     public static void registerItems(){
         // Register Copper Ingot
@@ -25,5 +27,8 @@ public class ModItems {
 
         // Register Copper Block
         Registry.register(Registry.ITEM, new Identifier(Simple.MOD_ID, "copper_block"), COPPER_BLOCK);
+
+        // Register Copper Ore
+        Registry.register(Registry.ITEM, new Identifier(Simple.MOD_ID, "copper_ore"), COPPER_ORE);
     }
 }

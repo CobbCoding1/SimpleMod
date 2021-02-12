@@ -13,8 +13,10 @@ public class ModBlocks {
 
     // Copper Block
     public static final Block COPPER_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).breakByTool(FabricToolTags.PICKAXES, 1).requiresTool().strength(5f, 30f).sounds(BlockSoundGroup.METAL));
+    static final Block COPPER_ORE = new Block(FabricBlockSettings.of(Material.STONE).breakByTool(FabricToolTags.PICKAXES, 1).requiresTool().strength(3f, 15f).sounds(BlockSoundGroup.STONE));
 
     public static void registerBlocks(){
         Registry.register(Registry.BLOCK, new Identifier(Simple.MOD_ID, "copper_block"), COPPER_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(Simple.MOD_ID, "copper_ore"), COPPER_ORE);
     }
 }
