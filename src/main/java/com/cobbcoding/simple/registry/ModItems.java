@@ -1,9 +1,7 @@
 package com.cobbcoding.simple.registry;
 
 import com.cobbcoding.simple.Simple;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -21,6 +19,11 @@ public class ModItems {
     // Copper Ore
     public static final BlockItem COPPER_ORE = new BlockItem(ModBlocks.COPPER_ORE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
 
+    // Tools
+
+    // Copper Pickaxe
+    public static ToolItem COPPER_PICKAXE = new CustomPickaxeItem(CopperToolMaterial.INSTANCE, 1, 1.2f, new Item.Settings().group(ItemGroup.TOOLS));
+
     public static void registerItems(){
         // Register Copper Ingot
         Registry.register(Registry.ITEM, new Identifier(Simple.MOD_ID, "copper_ingot"), COPPER_INGOT);
@@ -30,5 +33,9 @@ public class ModItems {
 
         // Register Copper Ore
         Registry.register(Registry.ITEM, new Identifier(Simple.MOD_ID, "copper_ore"), COPPER_ORE);
+
+        // Register Copper Pickaxe
+        Registry.register(Registry.ITEM, new Identifier(Simple.MOD_ID, "copper_pickaxe"), COPPER_PICKAXE);
     }
 }
+
