@@ -2,7 +2,9 @@ package com.cobbcoding.simple;
 
 import com.cobbcoding.simple.registry.ModBlocks;
 import com.cobbcoding.simple.registry.ModItems;
+import com.cobbcoding.simple.registry.OreGeneration;
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.util.registry.RegistryKey;
 
 public class Simple implements ModInitializer {
 
@@ -15,5 +17,8 @@ public class Simple implements ModInitializer {
 
         // Register Blocks
         ModBlocks.registerBlocks();
+
+        // Register Generation
+        OreGeneration.registerGeneration();
     }
 }
